@@ -1,0 +1,33 @@
+@font-face {
+    font-family: bitmaps;
+    src: url("fontes/pix32/Pix32.ttf");
+}
+body{
+    font-size: 30px;
+    font-family: bitmaps;
+    color: darkgreen;
+    background-color: black;
+}
+.container {
+  white-space: nowrap;    /* Evita que o texto quebre para a próxima linha */
+  overflow: hidden;       /* Esconde o texto que ainda não foi digitado */
+  border-right: 3px solid #000; /* Cria o cursor piscante */
+  width: 22ch;            /* Define a largura exata baseada no número de caracteres */
+  
+  /* Aplica as duas animações: digitação e piscar do cursor */
+  animation: 
+    typing 5s steps(50) forwards,
+    blink 0.5s step-end infinite alternate;
+}
+
+/* Animação que faz o texto aparecer letra por letra */
+@keyframes typing {
+  from { width: 0; }
+  to {width: 100%;}
+}
+
+/* Animação que faz o cursor piscar */
+@keyframes blink {
+  100% { border-color: transparent; }
+}
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relapsi</title>
+</head>
+<body>
+<div  class="container">
+<p>//====================================================</p>
+<p>// SISTEMA: Relapsi</p>
+<p>// ARQUIVO: NDR_ESPIRALIUM</p>
+<p>//====================================================</p>
+<br>
+<p>virus NDR_Espiralium {</p>
+<br>
+<p>    nome_completo = "Núcleo de Deformação Ritual Espiralium";</p>
+<p>    abreviacao    = "NDR Espiralium";</p>
+<br>
+<p>    categoria     = "Retrovírus Ritualístico de morte";</p>
+<p>    nivel_ameaca  = ESCARLATE;</p>
+<p>    origem        = "papilomavírus humano modificado genética e paranormalmente";</p>
+<p>    estado        = "em desenvolvimento";</p>
+<br>
+<p>    propriedades {</p>
+<br>
+<p>        estrutura = "Orgânica?";</p>
+<p>       comportamento = "Autoexpansivo e adaptativo";</p>
+<p>       transmissao = [</p>
+<p>            "Contato sanguíneo",</p>
+<p>            "Exposição prolongada",</p>
+<p>            "ferimento pelo vetor"</p>
+<p>            "contato de mucosas"</p>
+<p>            "aerosol"</p>
+<p>       ];</p>
+<br>
+<p>        resistencia = INUMANA;</p>
+<p>    }</p>
+<br>
+<p>    sintomas.estagio_1 {</p>
+<br>
+<p>        febre          = true;</p>
+<p>        hemoptise          = true;</p>
+<p>        insonia        = true;</p>
+<p>        distorcao_voz  = leve;</p>
+<p>        alucinacoes    = ocasionais;</p>
+<p>   }</p>
+<br>
+<p>    sintomas.estagio_2 {</p>
+<br>
+<p>        crescimento_corporal = "Tecido ósseo irregular";</p>
+<p>        comportamento       = AGRESSIVO;</p>
+<p>        perda_identidade    = progressiva;</p>
+<p>        marcas_negras      = visiveis;</p>
+<p>    }</p>
+<br>
+<p>    sintomas.estagio_3 {</p>
+<br>
+<p>        hospedeiro.estado = "IRREVERSIVEL";</p>
+<br>
+<p>        mutacao {</p>
+<p>            membros_adicionais = RANDOM;</p>
+<p>            pele = "em decomposicao";</p>
+<p>            morte parcial;</p>
+<p>        }</p>
+<br>
+<p>    }</p>
+<br>
+<p>    protocolo.contencao {</p>
+<br>
+<p>       if (infectado.estagio >= 2) {</p>
+<br>
+<p>            isolamento.total();</p>
+<p>            
+<br>
+<p>        }</p>
+<br>
+<p>            monitoramento.constante = true;</p>
+<p>        }</p>
+<p>    }</p>
+<br>
+<p>    observacao_final = """</p>
+<br>
+<p>    O NDR Espiralium demonstra comportamento parcialmente consciente.</p>
+<p>    Registros indicam que o vírus se adapta de acordo com o hospedeiro</p>
+<p>    e evolui destruindo seu dna e substituindo por um material genético</p>
+<p>    nunca antes catalogado</p>
+<br>
+<p>    Toda tentativa de destruição completa do núcleo resultou em</p>
+<p>    regeneração acelerada.</p>
+<br>
+<p>    """</p>
+<p>}</p>
+<br>
+<p>return AMEACA_BIO_RITUAL_CONFIRMADA;</p>
+</div>
+</body>
+
+</html>

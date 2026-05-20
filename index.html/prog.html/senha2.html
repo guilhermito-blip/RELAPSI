@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="stylesheet" href="font.css"
+    <meta charset="UTF-8">
+    <title>Acesso Restrito</title>
+    <script>
+        function verificarSenha() {
+            var senha = document.getElementById("senha").value;
+            // Altere '1234' para a senha que você deseja
+            if (senha === "relapsi") {
+                window.location.href = "ndr3.html";
+            } else {
+                alert("Senha incorreta!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <center><h2>Digite a senha para entrar:</h2></center>
+    <center><input type="password" id="senha"></center>
+    <center><button onclick="verificarSenha()">Entrar</button></center>
+</body>
+</html>
